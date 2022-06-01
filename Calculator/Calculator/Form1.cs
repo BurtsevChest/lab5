@@ -96,7 +96,10 @@ namespace Calculator
             {
                 res = a * b;
             }
-
+            if(operation == 'l')
+            {
+               
+            }
             if (operation == '/')
             {
                 if (b != 0)
@@ -139,7 +142,16 @@ namespace Calculator
             { textBox1.Text += ",";
                 f = false;
                     }
-        } 
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            double res = 0;
+            b = Convert.ToDouble(textBox1.Text);
+            res = Math.Log10(b);
+            textBox1.Text = Convert.ToString(res);
+            f = true;
+        }
 
         //сложение
         private void button13_Click(object sender, EventArgs e)
