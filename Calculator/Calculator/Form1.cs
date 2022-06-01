@@ -102,7 +102,7 @@ namespace Calculator
                 if (b != 0)
                     res = a / b;
                 else
-                    MessageBox.Show("Дубень ты конечно!");
+                    MessageBox.Show("Ошибка деления на ноль");
             }
             textBox1.Text = Convert.ToString(res);
             f = true;
